@@ -20,11 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            UIApplication.shared.connectedScenes.first.mak
-            let scene = UIApplication.shared.connectedScenes.first as! UIWindowScene
-            self.window = UIWindow(windowScene: scene)
-            self.window.frame = .init(x: 0, y: 0, width: 150, height: 400)
-//            self.window = UIWindow(frame: .init(x: 0, y: 0, width: 150, height: 400))
+
+            self.window = UIWindow(frame: .init(x: 0, y: 0, width: 150, height: 400))
             self.window.backgroundColor = .systemPink
             self.window.windowLevel = .normal + 1
             self.window.isHidden = false
